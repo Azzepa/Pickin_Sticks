@@ -5,6 +5,8 @@
 class App
 {
 private:
+    SDL_Window* window;
+    SDL_Renderer* renderer;
     bool isRunning;
 public:
     App();
@@ -13,7 +15,7 @@ public:
     int Execute();
 
     bool Initialise();
-    void OnEvent(SDL_Event* Event);
+    void OnEvent(SDL_Event* event);
     void Update();
     void Render();
     void Exit();
