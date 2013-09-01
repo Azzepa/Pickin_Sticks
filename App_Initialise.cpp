@@ -9,17 +9,17 @@ bool App::Initialise()
 
     //Create a window
     window = SDL_CreateWindow("Pickin' Sticks", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, 0);
-    if (window == NULL)
+    if (window == nullptr)
         return false;
 
     //Create a rendering context
-    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-    if (renderer == NULL)
+    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+    if (renderer == nullptr)
         return false;
 
     //Load a test image to display
-    testTexture = Texture::Load(renderer, "Img/Wall.bmp");
-    if (testTexture == NULL)
+    testTexture = Texture::Load(renderer, "Img/Wall.png");
+    if (testTexture == nullptr)
         return false;
 
     return true;

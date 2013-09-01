@@ -4,11 +4,11 @@
 App::App()
 {
     //Set everything to default values
-    window = NULL;
-    renderer = NULL;
+    window = nullptr;
+    renderer = nullptr;
     isRunning = true;
 
-    testTexture = NULL;
+    testTexture = nullptr;
 }
 
 App::~App()
