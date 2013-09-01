@@ -7,6 +7,8 @@ App::App()
     window = NULL;
     renderer = NULL;
     isRunning = true;
+
+    testTexture = NULL;
 }
 
 App::~App()

@@ -8,6 +8,8 @@ private:
     SDL_Window* window;
     SDL_Renderer* renderer;
     bool isRunning;
+
+    SDL_Texture* testTexture;
 public:
     App();
     ~App();

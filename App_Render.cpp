@@ -5,8 +5,13 @@ void App::Render()
 {
     //Set Rendering colour to black
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+
     //Clear Renderer
     SDL_RenderClear(renderer);
-    //Put everything to screen
+
+    //Place test image on screen
+    Texture::Draw(renderer, testTexture, 0, 0);
+
+    //Put everything on screen
     SDL_RenderPresent(renderer);
 }
