@@ -1,7 +1,7 @@
 
 #include "Library.h"
 
-void App::Exit()
+void App::Quit()
 {
     SDL_DestroyTexture(testTexture);
     SDL_DestroyRenderer(renderer);

@@ -2,7 +2,7 @@
 #ifndef APP_H_INCLUDED
 #define APP_H_INCLUDED
 
-class App
+class App: public Event
 {
 private:
     SDL_Window* window;
@@ -20,7 +20,9 @@ public:
     void OnEvent(SDL_Event* event);
     void Update();
     void Render();
-    void Exit();
+    void Quit();
+
+    //Eventfunctions
 };
 
 #endif // APP_H_INCLUDED
